@@ -1,0 +1,56 @@
+.header {
+	border-bottom: 1px solid #E4E4E4;
+	&__inner {
+		height: 90px;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;	
+	}
+
+	&__menu {}
+
+	&__logo {
+		transition: all 0.8s;
+		&:hover {
+			transform: scaleX(1.1);
+		}
+	}
+}
+
+.menu {
+
+	&__list {}
+
+	&__item {
+		display: inline-block;
+		margin-right: 40px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__link {
+		font-family: 'OpenSans', sans-serif;
+		line-height: 24px;
+		transition: all 0.3s;
+		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 0;
+			height: 1px;
+			background-color: $title;
+			transition: all 0.3s;
+		}
+		&:hover {
+			color: $title;
+			&::after {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.logo {}

@@ -1,0 +1,26 @@
+.footer {
+	background: #000;
+	color: #fff;
+
+	&__inner {
+		height: 90px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__copy {}
+
+	&__menu {}
+
+	&__menu-list {}
+
+	&__menu-item {
+		display: inline-block;
+		margin: 0 10px;
+	}
+
+	&__menu-link {}
+
+	&__terms {}
+}

@@ -1,0 +1,20 @@
+.instagram {
+	padding-top: 100px;
+	text-align: center;
+	overflow: hidden;
+
+	&__title {
+		font-size: 16px;
+		@include font700;
+		margin-bottom: 40px;
+		color: $title;
+	}
+
+	&__row {
+		display: flex;
+		img {
+			display: block;
+			margin-right: 3px;
+		}
+	}
+}
