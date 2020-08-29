@@ -3,16 +3,19 @@
 	&__inner {
 		height: 90px;
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: center;
 		align-items: center;	
 	}
 
 	&__menu {}
 
 	&__logo {
-		transition: all 0.8s;
+		position: relative;
+		top: 2px;
+		margin: 0 60px;
+		transition: all 0.5s;
 		&:hover {
-			transform: scaleX(1.1);
+			transform: translateY(2px);
 		}
 	}
 }

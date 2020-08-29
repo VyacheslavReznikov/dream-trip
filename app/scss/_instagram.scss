@@ -1,7 +1,6 @@
 .instagram {
-	padding-top: 100px;
 	text-align: center;
-	overflow: hidden;
+	
 
 	&__title {
 		font-size: 16px;
@@ -11,10 +10,18 @@
 	}
 
 	&__row {
+		overflow: auto;
 		display: flex;
 		img {
 			display: block;
+			width: 187px;
+			height: 187px;
+			object-fit: cover;
 			margin-right: 3px;
+			&
+			:last-child {
+				margin-right: 0;
+			}
 		}
 	}
 }
