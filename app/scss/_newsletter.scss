@@ -2,6 +2,9 @@
 
 	&__inner {
 		padding: 80px 0 60px;
+		@media(max-width: 768px) {
+			padding: 30px 0;
+		}
 	}
 
 	&__title {
@@ -20,7 +23,12 @@
 
 	&__form {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
+
+		@media(max-width: 1110px) {
+			flex-direction: column;
+		}	
 	}
 
 	&__input,
@@ -29,6 +37,15 @@
 		height: 50px;
 		outline: transparent;
 		transition: all 0.3s;
+		
+
+		@media(max-width: 1110px) {
+			width: 100%;
+			margin-bottom: 30px;
+			&:last-child {
+				margin-bottom: 0;			
+			}
+		}	
 
 		&:hover,
 		&:focus {

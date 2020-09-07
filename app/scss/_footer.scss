@@ -3,8 +3,8 @@
 	color: #fff;
 
 	&__inner {
-		height: 90px;
-		display: flex;
+		min-height: 90px;	
+		display: flex;		
 		justify-content: space-between;
 		align-items: center;
 	}
@@ -23,4 +23,34 @@
 	&__menu-link {}
 
 	&__terms {}
+}
+
+@media(max-width: 768px) {
+	.footer {
+		&__inner {
+			flex-direction: column;
+			padding: 20px 0;
+		}
+
+		&__copy {
+			order: 3;
+
+		}
+
+		&__menu {
+			order: 1;
+			margin-bottom: 30px;			
+		}
+
+		&__terms {
+			order: 2;
+			margin-bottom: 30px;
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.footer__menu {
+		font-size: 10px;
+	}
 }

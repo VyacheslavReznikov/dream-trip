@@ -1,12 +1,13 @@
 .instagram {
 	text-align: center;
-	
 
 	&__title {
+		padding-top: 30px;
 		font-size: 16px;
 		@include font700;
 		margin-bottom: 40px;
 		color: $title;
+		text-transform: uppercase;
 	}
 
 	&__row {
