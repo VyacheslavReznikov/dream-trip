@@ -87,12 +87,28 @@
 		margin-bottom: 30px;
 		margin-left: 30px;
 
+		@media(max-width: 1200px) {
+			width: 29%;
+		}
+
+		@media(max-width: 768px) {
+			width: 44%;
+		}
+
+		@media(max-width: 576px) {
+			width: 100%;
+		}
+
 		.item-page {
 
 			&__image {
 				flex: 0 0 185px;
 				width: 270px;
 				height: 185px;
+
+				@media(max-width: 1200px) {
+					width: 100%;
+				}
 			}
 
 			&__content {
@@ -362,6 +378,7 @@
 
 	&__image {
 		display: block;
+
 		@media(max-width: 1200px) {
 			flex: 0 0 230px;
 		}
