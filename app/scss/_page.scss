@@ -1,5 +1,4 @@
 .page {
-	margin-top: 90px;
 
 	&__inner {
 		padding-top: 30px;
@@ -49,7 +48,7 @@
 	display: flex;
 
 	@media(max-width: 768px) {
-		display: block;
+		flex-direction: column;
 	}
 
 	&__image {
